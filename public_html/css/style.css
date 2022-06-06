@@ -1,0 +1,50 @@
+
+
+body {
+  font-family: sans-serif;  
+  margin: 30px;
+  background-color:lightsteelblue;
+}
+
+
+
+
+section {
+  /*font-size:large; */
+  text-align: justify;
+  /*text-align: left;*/
+}
+
+
+
+article {
+  width: 90%;
+  max-width: 1000px;
+  padding: 20px;
+  margin: 0px auto;
+}
+
+
+
+h2 {
+  text-align: center;
+  padding: 40px 0px 0px 0px;
+  font-size: 3em;
+}
+
+
+.centrar {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+footer {
+  font-size: small;
+  text-align: center;
+}
+
+
+

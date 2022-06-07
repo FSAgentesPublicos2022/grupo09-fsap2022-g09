@@ -24,7 +24,10 @@ article {
   margin: 0px auto;
 }
 
-
+span {
+  padding: 20px;
+  margin: 20px auto;
+}
 
 h2 {
   text-align: center;

@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="css/style.css" rel="stylesheet">
-    <link rel="icon" type="image/jpg" href="favicon.ico"/>
+    <link rel="icon" type="image/jpg" href="/img/favicon.ico"/>   
     <title>Registrar Cuenta en Opcoin</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
       <div class="linea"></div>
       <div class="text-center">
       <div class="text-center">
-        <h3>Registro de Cuenta</h3>
+        <h3>Registro de Usuario</h3>
       </div>
 
   
@@ -30,21 +30,32 @@
       
     </div>
 
-    
-    <!-- Email input -->
+    <!-- Last input -->
     <div class="form-outline mb-4">
-      <input type="email" id="registerEmail" class="form-control" value placeholder="Correo" />
+      <input type="text" id="registerLast" class="form-control" value placeholder="Apellido"/>
+      
     </div>
+    
+    <!-- Date input -->
+    <div class="form-outline mb-4">
+      <input type="text" id="registerDate" class="form-control" value placeholder="Fecha de Nacimiento" />
+    </div>
+
+    <!-- Gender input -->
+    <div class="form-outline mb-4">
+      <input type="text" id="registerGender" class="form-control" value placeholder="Sexo"/>     
+    </div>
+
 
     <!-- Password input -->
     <div class="form-outline mb-4">
-      <input type="password" id="registerPassword" class="form-control" value placeholder="Password"/>
+      <input type="password" id="registerPassword" class="form-control" value placeholder="Contraseña"/>
     </div>
 
 
     <!-- Repeat Password input -->
     <div class="form-outline mb-4">
-      <input type="password" id="registerRepeatPassword" class="form-control" value placeholder="Repetir Password"/>
+      <input type="password" id="registerRepeatPassword" class="form-control" value placeholder="Repetir Contraseña"/>
     </div>
 
     <!-- Checkbox -->

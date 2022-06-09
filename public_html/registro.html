@@ -6,51 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <title>Opcoin</title>
+    <link rel="icon" type="image/jpg" href="favicon.ico"/>
+    <title>Registrar Cuenta en Opcoin</title>
 </head>
 <body>
 
-  
-  
-  <br clear="all"> 
+  <div class="container centrar border border-3 border-dark"> 
+     <div class="text-center">
+      <a href="index.html"><img src="img/cuenta.png" alt="Inicio_sesion" width="155" height="135"></a> 
+    </div>    
+      <div class="linea"></div>
+      <div class="text-center">
+      <div class="text-center">
+        <h3>Registro de Cuenta</h3>
+      </div>
 
-    <div class="container centrar"> 
+  
 
-      <p> 
-        <a href="index.html"><img src="img/logo.png" alt="logo"  class="img-responsive" width="25%" height="25%"></a>				
-      </p>
-      
-        <h1>Registrarse</h1>
-        <br>
     <form>
     <!-- Name input -->
     <div class="form-outline mb-4">
-      <input type="text" id="registerName" class="form-control" />
-      <label class="form-label" for="registerName">Nombre</label>
+      <input type="text" id="registerName" class="form-control" value placeholder="Nombre"/>
+      
     </div>
 
-    <!-- Username input -->
-    <div class="form-outline mb-4">
-      <input type="text" id="registerUsername" class="form-control" />
-      <label class="form-label" for="registerUsername">Username</label>
-    </div>
-
+    
     <!-- Email input -->
     <div class="form-outline mb-4">
-      <input type="email" id="registerEmail" class="form-control" />
-      <label class="form-label" for="registerEmail">Email</label>
+      <input type="email" id="registerEmail" class="form-control" value placeholder="Correo" />
     </div>
 
     <!-- Password input -->
     <div class="form-outline mb-4">
-      <input type="password" id="registerPassword" class="form-control" />
-      <label class="form-label" for="registerPassword">Password</label>
+      <input type="password" id="registerPassword" class="form-control" value placeholder="Password"/>
     </div>
+
 
     <!-- Repeat Password input -->
     <div class="form-outline mb-4">
-      <input type="password" id="registerRepeatPassword" class="form-control" />
-      <label class="form-label" for="registerRepeatPassword">Repetir password</label>
+      <input type="password" id="registerRepeatPassword" class="form-control" value placeholder="Repetir Password"/>
     </div>
 
     <!-- Checkbox -->
@@ -72,9 +66,9 @@
         <address>
           <strong>Opcoin S.A</strong> - 
           Avenida Principal 123 -
-          Ciudad Cordoba, Provincia de Cordoba - 
-          Telefono: 123456789 -
-          correo: info@opcoin.com.ar - 
+          Ciudad de Córdoba, Provincia de Córdoba Argentina - 
+          Teléfono: +54 351 123456789 -
+          correo: info@opcoin.com.ar  
         </address>		
       </footer>
 

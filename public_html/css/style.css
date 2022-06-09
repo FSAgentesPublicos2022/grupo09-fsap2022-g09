@@ -49,10 +49,19 @@ h2 {
 
 
 
+
 footer {
   font-size: small;
   text-align: center;
 }
 
+
+.linea {
+  border-top: 1px solid black;
+  height: 2px;
+  max-width: 360px;
+  padding: 0;
+  margin: 20px auto 0 auto;
+}
 
 

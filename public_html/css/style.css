@@ -57,7 +57,7 @@ footer {
 
 
 .linea {
-  border-top: 1px solid black;
+  border-top: 1px solid lightgrey;
   height: 2px;
   max-width: 360px;
   padding: 0;

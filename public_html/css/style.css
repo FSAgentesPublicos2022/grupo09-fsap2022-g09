@@ -1,7 +1,7 @@
 
 
 body {
-  font-family: sans-serif;  
+  font-family: helvetica;
   margin: 30px;
   background-color:lightsteelblue;
 }
@@ -42,12 +42,6 @@ h2 {
   margin-right: auto;
 }
 
-.cursiva {
-  font-style: italic;
-  color: darkblue;
-}
-
-
 
 
 footer {
@@ -63,5 +57,42 @@ footer {
   padding: 0;
   margin: 20px auto 0 auto;
 }
+
+
+
+details {
+  padding: 15px;
+  background-color: #f6f7f8;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.marco {
+  padding: 15px;
+  background-color: #f6f7f8;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+  max-width: auto;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+}
+
+.enlace { 
+  text-decoration: none; 
+  color: blue;
+}
+
+
 
 

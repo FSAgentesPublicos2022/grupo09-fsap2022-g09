@@ -22,29 +22,29 @@
       </div>
 
   
-
-    <form>
+      
+    <form onsubmit="alert('bienvenido a Opcoin te registraste!!!')">
     <!-- Name input -->
     <div class="form-outline mb-4 w-50 centrar">
-      <input type="text" id="registerName" class="form-control" value placeholder="Nombre"/>
+      <input type="text" id="registerName" class="form-control" value placeholder="Nombre" required pattern="[a-zA-Z'-'\s]*"/>  <!-- onkeypress="return /[a-z]/i.test(event.key)"-->
       
     </div>
 
     
     <!-- Email input -->
     <div class="form-outline mb-4 w-50 centrar">
-      <input type="email" id="registerEmail" class="form-control" value placeholder="Correo" />
+      <input type="email" id="registerEmail" class="form-control" value placeholder="Correo" required/>
     </div>
 
     <!-- Password input -->
     <div class="form-outline mb-4 w-50 centrar">
-      <input type="password" id="registerPassword" class="form-control" value placeholder="Password"/>
+      <input type="password" id="registerPassword" class="form-control" value placeholder="Password" required pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{8,}$" title="Ingresar minimo 8 carateres, con numero y letra minuscula y mayuscula"/>
     </div>
 
 
     <!-- Repeat Password input -->
     <div class="form-outline mb-4 w-50 centrar">
-      <input type="password" id="registerRepeatPassword" class="form-control" value placeholder="Repetir Password"/>
+      <input type="password" id="registerRepeatPassword" class="form-control" value placeholder="Repetir Password" required pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{8,}$" title="Ingresar minimo 8 carateres, con numero y letra minuscula y mayuscula"/>
     </div>
 
     <!-- Checkbox -->
@@ -57,10 +57,12 @@
     </div>
 
     <div class="text-center">
-      <button id="btn_registrar" onclick="prompter()" type="submit" class="btn btn-primary btn-block mb-4">Registrarse</button>
+      <!--<button id="btn_registrar" onclick="prompter()" type="submit" class="btn btn-primary btn-block mb-4">Registrarse</button>-->
+      <button id="btn_registrar"  type="submit" class="btn btn-primary btn-block mb-4">Registrarse</button>
     </div>
       
     </form>
+  
 
 
       <footer>       

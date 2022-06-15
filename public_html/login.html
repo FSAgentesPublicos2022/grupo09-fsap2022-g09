@@ -22,20 +22,20 @@
       </div>
     
              
-    <form>
+    <form  onsubmit="alert('bienvenido a Opcoin!!')">
         <!-- Email input -->
         <div class="form-outline mb-4 w-50 centrar">
-          <input type="email" id="form2Example1" class="form-control" value placeholder="Correo Electrónico"/>
+          <input type="email" id="form2mail" class="form-control" value placeholder="Correo Electrónico" required/>
         </div>
       
         <!-- Password input -->
         <div class="form-outline mb-4 w-50 centrar">
-          <input type="password" id="form2Example2" class="form-control" value placeholder="Contraseña" />
+          <input type="password" id="form2pass" class="form-control" value placeholder="Contraseña" required />
         </div>
       
         <!-- Submit button -->
         <div class="text-center">
-          <button id="btn_iniciarSesion" type="button" class="btn btn-primary btn-block mb-4">Iniciar Sesion</button>
+          <button id="btn_iniciarSesion" type="submit" class="btn btn-primary btn-block mb-4">Iniciar Sesion</button>
         </div>
         
         <!-- 2 column grid layout for inline styling -->
@@ -43,8 +43,8 @@
           <div class="col d-flex justify-content-center">
             <!-- Checkbox -->
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
-              <label class="form-check-label" for="form2Example31"> Recordar sesión </label>
+              <input class="form-check-input" type="checkbox" value="" id="form2check" checked />
+              <label class="form-check-label" for="form2check"> Recordar sesión </label>
             </div>
           </div>
       

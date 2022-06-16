@@ -25,7 +25,7 @@ function confirmacion() {
 	var pregunta = confirm("¿Deseas ingresar a Opcoin?")
 	if (pregunta){
 		alert("Te envio ahi rapidamente")
-		window.location = "http://127.0.0.1:5500/login.html";
+		window.location = "https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Page_Under_Construction.png/640px-Page_Under_Construction.png";
 	}
 	else{
 		alert("Quizas en otro momento...\n Gracias de todas formas")

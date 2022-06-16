@@ -3,7 +3,7 @@
 body {
   font-family: helvetica;
   margin: 30px;
-  background-color:lightsteelblue;
+  background-color:white;
 }
 
 
@@ -62,31 +62,20 @@ footer {
 
 details {
   padding: 15px;
-  background-color: #f6f7f8;
+  background-color: lightblue;
   margin-bottom: 20px;
   border-radius: 20px;
 }
 
 .marco {
   padding: 15px;
-  background-color: #f6f7f8;
+  background-color: lightblue;
   margin-bottom: 20px;
   border-radius: 20px;
 }
 
 
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
-  max-width: auto;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 50px;
-}
 
 .enlace { 
   text-decoration: none; 
@@ -94,5 +83,38 @@ details {
 }
 
 
+nav {
+  background-color:lightblue;
+}
 
+
+
+.cot_div1 {
+  width: 250px; 
+  height:220px; 
+  background-color: #FFFFFF; 
+  overflow:hidden; 
+  text-align: right; 
+  line-height:14px; 
+  block-size:220px; 
+  font-size: 12px; 
+  font-feature-settings: normal; 
+  text-size-adjust: 100%;
+  border: 1px solid"
+}
+
+.cot_div2 {
+  height:200px;
+  padding:0px; 
+  margin:0px; 
+  width: 100%;
+}
+
+
+.cot_iframe {
+  border:0;
+  margin:0;
+  padding:0;
+  line-height:14px;
+}
 

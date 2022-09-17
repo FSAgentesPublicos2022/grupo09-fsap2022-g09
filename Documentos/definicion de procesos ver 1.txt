@@ -1,0 +1,83 @@
+
+Procesos de operacones (ver 1)
+
+Inicio
+
+1 inicio de sesion (entrada al controlador)
+
+2 obtener usuario y contraseña ingresada (controlador)
+
+3 Validar usuario y contraseña (usuario existe), si no existe que genere uno nuevo.
+
+4 crear la sesion del usuario (registro de la misma)
+
+5 Informar inicio existos (dashboard)
+
+
+
+
+cerrar la sesion
+
+1 obtener los datos del usuario (sesion iniciada)
+
+2 validar existencia de sesion abierta (si existe)
+
+3 cerrar sesion
+
+4 informar cierre exitoso
+
+
+
+Definicion de procesos de registro de usuario (ver 1)
+
+1 inicio de sesion de usuaio (entrada controlador)
+
+2 obtiene usuario y contraseña (controlador)
+
+3 Valida usuario y contraseña. El usuairo no existe
+
+4 Llama resgitro de usuario y carga sus datos  
+
+5 Controlador verifica que los datos cagados no existan. Si existe da error de datos existentes
+
+6 Se crea cuenta de usuario
+
+
+
+Comprar Criptomonedas
+
+1 el sistema muestra cotizaciones de monedas mas compradas ( 10 primeras)
+
+2 El usuario selecciona el tipo de operacion que va a realizar (compra)
+
+3 se lista los tipos de cripto monedas junto con la cotizacion de cada una
+
+4 se selecciona la cantidad de criptomoneda que se quiere adquirir
+
+5 controlador informa el monto a cobrar por la compra
+
+6 el usuario confirma el monto  y el controlador indica si posee montos.
+
+7 se confirma transaccion y se registra compra (fecha, hora, usuario y numero de transaccion).
+
+
+
+Venta criptomoneda
+
+1 el sistema valida cuenta de usuario 
+
+2 trae contenido de las criptomonedas del usuairo (cantidades y cotizacion del dia
+
+3 el usuairo selecciona vender
+
+4 el usuario selecciona la cantidad a vender (muestra a cuanto lo vende)
+
+5 confirma la venta
+
+6 se registra venta (numero, fecha, hora, tipo de moneda, cantidad, valor unitario y ganancia)
+
+
+
+
+
+

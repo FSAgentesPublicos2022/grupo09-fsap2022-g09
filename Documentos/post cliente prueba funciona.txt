@@ -1,0 +1,24 @@
+Post api clientes
+
+https://localhost:44384/api/clientes
+
+
+{
+"ID_TipoDocumento": 1,
+"ID_Localidad": 89,
+"Apellido": "Mamana",
+"Nombre": "Mariana",
+"Email": "yeyom@gmail.com",
+"Password": "3st4s0yy0",
+"CPcliente": "5125",
+"NumeroDocumentoCliente": 45121485,
+"Telefono": "3514512484",
+"DireccionCliente": "Luis F. Tagle 1547",
+"FechaAltaCliente": "2019-08-04T09:31:45",
+"FechaBajaCliente": null,
+"BloqueadoCliente": false
+}
+
+
+
+Funciona correctamente

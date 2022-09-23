@@ -19,8 +19,11 @@ namespace BEopcoin
         public int ID_TipoDocumento { get; set; }
 
         [Required]
-        [StringLength(50)]
+        [StringLength(20)]
         public string NombreTipoDocumento { get; set; }
+
+        [StringLength(50)]
+        public string Descripcion { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Cliente> Cliente { get; set; }

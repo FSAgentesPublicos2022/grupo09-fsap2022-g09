@@ -12,7 +12,7 @@ namespace BEopcoin
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Cliente()
         {
-            CuentaUsuario = new HashSet<CuentaUsuario>();
+            CuentaBancaria = new HashSet<CuentaBancaria>();
         }
 
         [Key]
@@ -21,6 +21,8 @@ namespace BEopcoin
         public int ID_TipoDocumento { get; set; }
 
         public int ID_Localidad { get; set; }
+
+        public int ID_Usuario { get; set; }
 
         [Required]
         [StringLength(50)]
@@ -31,36 +33,38 @@ namespace BEopcoin
         public string Nombre { get; set; }
 
         [Required]
+        [StringLength(321)]
         public string Email { get; set; }
 
         [Required]
-        [StringLength(50)]
-        public string Contraseña { get; set; }
+        [StringLength(10)]
+        public string CPcliente { get; set; }
+
+        [Required]
+        [StringLength(10)]
+        public string NumeroDocumentoCliente { get; set; }
+
+        [Required]
+        [StringLength(200)]
+        public string Telefono { get; set; }
 
         [Required]
         [StringLength(50)]
-        public string CPcliente { get; set; }
-
-        public int? NumeroDocumentoCliente { get; set; }
-
-        public int? Telefono { get; set; }
-
-        [StringLength(50)]
         public string DireccionCliente { get; set; }
 
-        [Column(TypeName = "date")]
-        public DateTime FechaAltaCliente { get; set; }
+        public DateTime FechaHoraAltaCliente { get; set; }
 
-        [Column(TypeName = "date")]
-        public DateTime? FechaBajaCliente { get; set; }
+        public DateTime? FechaHoraBajaCliente { get; set; }
 
-        public bool? BloqueadoCliente { get; set; }
+        public bool BloqueadoCliente { get; set; }
 
         public virtual Localidad Localidad { get; set; }
 
         public virtual TipoDocumento TipoDocumento { get; set; }
 
+        public virtual Usuario Usuario { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CuentaUsuario> CuentaUsuario { get; set; }
+        public virtual ICollection<CuentaBancaria> CuentaBancaria { get; set; }
     }
 }

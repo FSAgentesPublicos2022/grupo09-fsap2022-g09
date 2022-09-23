@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
+using BEopcoin.Controllers;//
+
 namespace BEopcoin
 {
     public static class WebApiConfig
@@ -13,6 +15,7 @@ namespace BEopcoin
 
             // Rutas de API web
             config.MapHttpAttributeRoutes();
+            config.MessageHandlers.Add(new TokenValidationHandler()); //
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
@@ -21,4 +24,8 @@ namespace BEopcoin
             );
         }
     }
+
+
+
+
 }

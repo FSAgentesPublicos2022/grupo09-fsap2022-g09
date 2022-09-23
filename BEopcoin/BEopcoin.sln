@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32802.440
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BEopcoin", "BEopcoin\BEopcoin.csproj", "{4675DB3C-7E11-4119-AAAE-818DF66A368B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BEopcoin", "BEopcoin\BEopcoin.csproj", "{AE822A68-4390-40F1-BE1F-D479D0D3387D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4675DB3C-7E11-4119-AAAE-818DF66A368B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4675DB3C-7E11-4119-AAAE-818DF66A368B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4675DB3C-7E11-4119-AAAE-818DF66A368B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4675DB3C-7E11-4119-AAAE-818DF66A368B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE822A68-4390-40F1-BE1F-D479D0D3387D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE822A68-4390-40F1-BE1F-D479D0D3387D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE822A68-4390-40F1-BE1F-D479D0D3387D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE822A68-4390-40F1-BE1F-D479D0D3387D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {828DF3AB-F437-432A-951B-728AF572B2EE}
+		SolutionGuid = {49BB1F66-3BCC-4EC4-AA41-3A7439E16657}
 	EndGlobalSection
 EndGlobal

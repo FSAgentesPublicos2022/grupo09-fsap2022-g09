@@ -18,7 +18,8 @@ namespace BEopcoin
         [Key]
         public int ID_Provincia { get; set; }
 
-        [StringLength(50)]
+        [Required]
+        [StringLength(20)]
         public string NombreProvincia { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

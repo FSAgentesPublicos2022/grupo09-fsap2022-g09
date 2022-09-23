@@ -21,6 +21,7 @@ namespace BEopcoin
 
         [Key]
         [Column(Order = 2)]
+        [StringLength(321)]
         public string Email { get; set; }
     }
 }

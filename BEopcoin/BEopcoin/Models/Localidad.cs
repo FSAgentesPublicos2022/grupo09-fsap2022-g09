@@ -19,7 +19,7 @@ namespace BEopcoin
         public int ID_Localidad { get; set; }
 
         [Required]
-        [StringLength(50)]
+        [StringLength(30)]
         public string NombreLocalidad { get; set; }
 
         public int ID_Provincia { get; set; }

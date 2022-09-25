@@ -1,0 +1,25 @@
+.blue-btn a{
+    color: white;
+    text-decoration:none;
+    text-align: center;
+    display:block; /* important */
+  }
+  
+  
+  
+  
+  .blue-btn{
+    height: 64px;
+    font: normal normal 700 1em/4em helvetica ;
+    overflow: hidden;
+    width: 200px;
+    background-color: #3b5998;
+    border-radius: 20px;
+  }
+
+
+  .centrar {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }

@@ -13,27 +13,25 @@ using BEopcoin;
 namespace BEopcoin.Controllers
 {
 
-
-    public class ClienteDTO  //
+    public class ClienteDTO
     {
         public String Nombre { get; set; }
     }
-
-
 
     public class ClientesController : ApiController
     {
         private Model1 db = new Model1();
 
         // GET: api/Clientes
-        /*
-        public IQueryable<Cliente> GetCliente()
-        {
-            return db.Cliente;
-        }
-        */
+        /* 
+         public IQueryable<Cliente> GetCliente()
+         {
+           return db.Cliente;
+         }
+         */
 
-        public IQueryable<ClienteDTO> GetCLIENTE()    //
+        // GET: api/Clientes
+        public IQueryable<ClienteDTO> GetCLIENTE()
         {
             var resultado = new List<ClienteDTO>();
             foreach (var item in db.Cliente)

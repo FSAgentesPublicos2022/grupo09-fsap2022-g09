@@ -8,7 +8,8 @@ import { Usuario } from '../usuario.service';
   providedIn: 'root'
 })
 export class AuthService {
-  url="https://reqres.in/api/login";    /* https://reqres.in/  "post login successful" - usuario: eve.holt@reqres.in  password:cityslicka - token:QpwL5tke4Pnpja7X4  */ 
+  //url="https://reqres.in/api/login";    /* https://reqres.in/  "post login successful" - usuario: eve.holt@reqres.in  password:cityslicka - token:QpwL5tke4Pnpja7X4  */ 
+  url="https://localhost:44357/api/login/authenticate";
   loggedIn= new BehaviorSubject<boolean>(false);
   currentUserSubject: BehaviorSubject<Usuario>;
   currentUser: Observable<Usuario>;

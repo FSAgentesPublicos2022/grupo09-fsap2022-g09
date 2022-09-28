@@ -7,6 +7,9 @@ import { CuentaService } from 'src/app/services/cuenta.service';
   styleUrls: ['./movimientos.component.css']
 })
 export class MovimientosComponent implements OnInit {
+
+  //usuarioLogueado="usuario1"; //
+
   hoy= new Date();
   mostrarMovimientos: boolean=true;
   movimientos:any;

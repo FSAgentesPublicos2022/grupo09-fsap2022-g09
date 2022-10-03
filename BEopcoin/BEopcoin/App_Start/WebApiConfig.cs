@@ -5,6 +5,8 @@ using System.Web.Http;
 
 using BEopcoin.Controllers;//
 
+using BEopcoin.App_Start; //cors
+
 namespace BEopcoin
 {
     public static class WebApiConfig
@@ -22,6 +24,7 @@ namespace BEopcoin
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+            config.EnableCors(new AccessPolicyCors()); //
         }
     }
 

@@ -46,13 +46,13 @@ namespace BEopcoin.Controllers
             //bool isCredentialValid = (login.Password == "123456");
             //bool isCredentialValid = (login.Email == "prueba@acme.com" && login.Password == "123456");
 
-            int validar = (from p in db.Usuario where (p.NombreUsuario == login.Email) && (p.Password == login.Password) select p).Count();
+            int validar = (from p in db.Usuario where (p.NombreUsuario == login.email) && (p.Password == login.password) select p).Count();
 
             //if (isCredentialValid)
             if (validar != 0)
             {
                 //var token = TokenGenerator.GenerateTokenJwt(login.Username);
-                var token = TokenGenerator.GenerateTokenJwt(login.Email);
+                var token = TokenGenerator.GenerateTokenJwt(login.email);
                 return Ok(token);
             }
             else

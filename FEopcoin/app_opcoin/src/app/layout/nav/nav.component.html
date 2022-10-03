@@ -9,7 +9,7 @@
           <li *ngIf="estaAutenticado" class="nav-item">
             <a class="nav-link" routerLink="/home"  aria-current="page">HOME</a>
           </li>
-          <li  class="nav-item">
+          <li *ngIf="!estaAutenticado" class="nav-item">
             <a class="nav-link"  routerLink="/servicios"  aria-current="page">SERVICIOS</a>
           </li>
           <!--<li  class="nav-item">

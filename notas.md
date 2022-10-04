@@ -8,6 +8,7 @@
 System.IdentityModel.Tokens.Jwt
 
 Microsoft.AspNet.Cors
+
 Microsoft.AspNet.WebApi.Cors
 
 

@@ -1,0 +1,31 @@
+Procesos de registrar  usuario
+
+1 controlador inicia sesion (usuario)
+2 se obtiene los datos ingresados (nombre usuario y contrasena) y no existe.
+3 el usuario confirma el alta.
+4 se crea usuario con ID_usuario autogenerado, ID_rol "Cliente", NombreUsuario (email), Contrasena, fechaHoraAlta y Bloqueado (cero-fale).
+5 se notifica el alta del usuario 
+
+
+Registrar cliente:
+
+Precondicion usuario existe
+
+1 controlador inicia sesion (cliente)
+2 se obtienen los datos del cliente (email, Apellido, Nombre, TipoDoc, NumeroDoc, Telefono, Provincia, CP, Localidad y direccion)
+3 Se verifica que el email ingresado exista en usuario.
+4 se verifica la existenaci a de Tipo de documento
+5 Se verifica la existencia de localidad
+6 Se verifica la existencia de Provincia
+7 Se verifica la existencia de localidad
+8 Se crea Cliente con Id_cliente (autogenerado), Id_TipoDocumento, Id_Localidad, Apellido, Nombre, email, CPCliente, NumeroDocumentoCliente, Telefono, DireccionCliente y fechaHoraAltaCliente.
+9 controlador de usuario sesion
+10 se busca usuario siendo su nombre identico a email ingresado
+11 se registra ID_cliente en usuario con el ID_cliente.
+12 notifica de alta de cliente
+
+
+
+
+
+

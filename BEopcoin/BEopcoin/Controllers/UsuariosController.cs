@@ -103,6 +103,7 @@ namespace BEopcoin.Controllers
             if (validar == 0)
             {
                 db.Usuario.Add(usuario);
+               
                 db.SaveChanges();
             } else {return StatusCode(HttpStatusCode.Conflict);}        // 409  
 

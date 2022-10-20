@@ -4,6 +4,9 @@ import { AuthService } from 'src/app/services/auth/auth.service';
 import { UsuarioService,  Usuario } from 'src/app/services/usuario.service';
 import { IniciarSesionComponent } from '../iniciar-sesion/iniciar-sesion.component';
 
+
+
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -12,19 +15,17 @@ import { IniciarSesionComponent } from '../iniciar-sesion/iniciar-sesion.compone
 export class HomeComponent implements OnInit {
   [x: string]: any;
   
-  usuarioLogueado = "usuario1"; //
+  usuarioLogueado = "Usuario1"; //
   
   
-
   
+  constructor(private usuarioService: UsuarioService,) { }
 
-  constructor(private usuarioService: UsuarioService,
-              ) { }
+  ngOnInit(): void {  }
 
-  ngOnInit(): void {
-    
-    
-  }
+ 
+
+
 
   
 

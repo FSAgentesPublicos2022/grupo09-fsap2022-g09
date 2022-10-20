@@ -9,6 +9,10 @@ export class CuentaService {
 
   ObtenerUltimosMovimientos()
   {
-   return [{operacion:"Extracción",monto:1500}, {operacion:"Depósito", monto:1520}]; /* dato harcodeado */
+   
+  return [{operacion:"compra",monto:0.0010,moneda:"ethereum"}, 
+          {operacion:"compra", monto:0.015,moneda:"monero"},
+          {operacion:"compra", monto:0.00004,moneda:"bitcoin"},
+          {operacion:"conversion", monto:0.00011,moneda:"bitcoin"}]; 
   }
 }

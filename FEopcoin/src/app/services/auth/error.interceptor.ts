@@ -13,12 +13,14 @@ export class ErrorInterceptor implements HttpInterceptor {
         return next.handle(req).pipe(catchError(err => {
           if (err.status === 401) {
             location.reload();
-          }
+          }if (err.status === 409){alert("El usuario ya existe")}  ///
     
           const error = err.error.message || err.statusText;
           return throwError(error);
         }));
       }
+
+      
 
       
 

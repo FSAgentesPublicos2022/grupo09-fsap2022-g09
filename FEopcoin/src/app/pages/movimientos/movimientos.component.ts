@@ -8,7 +8,7 @@ import { CuentaService } from 'src/app/services/cuenta.service';
 })
 export class MovimientosComponent implements OnInit {
 
-  //usuarioLogueado="usuario1"; //
+  usuarioSaldo="Saldo Bitcoin:0.00034/Ethereum:0.0050/Monero:0.045"; //
 
   hoy= new Date();
   mostrarMovimientos: boolean=true;

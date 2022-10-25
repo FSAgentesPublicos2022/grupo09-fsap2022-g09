@@ -50,7 +50,7 @@ namespace BEopcoin
         [StringLength(50)]
         public string DireccionCliente { get; set; }
 
-        public DateTime FechaHoraAltaCliente { get; set; }
+        public DateTime? FechaHoraAltaCliente { get; set; }
 
         public DateTime? FechaHoraBajaCliente { get; set; }
 

@@ -26,15 +26,16 @@ namespace BEopcoin.Controllers
         private Model1 db = new Model1();
 
         
-        /*
+        
         // GET: api/Clientes
         public IQueryable<Cliente> GetCliente()
         {
             return db.Cliente;
         }
-        */
+        
 
         // GET: api/Clientes
+        /*
         public IQueryable<ClienteDTO> GetCLIENTE()
         {
             var resultado = new List<ClienteDTO>();
@@ -47,6 +48,7 @@ namespace BEopcoin.Controllers
             }
             return resultado.AsQueryable();
         }
+        */
 
 
 

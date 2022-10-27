@@ -1,0 +1,32 @@
+Modulo: Comprar Moneda
+
+POST:/api/transacion/comprar
+
+DTO
+(request)
+{
+  CuentaDebito (ID_Billetera, Tipo Moneda: Peso),
+  CuentaCredito (ID_Billetera, TipoMoneda: ANY != Peso),
+  Importe (TipoMoneda = TipoMoneda CuentaDebito)
+}
+
+DTO
+(response)
+{
+  SaldoCuentaDebito (en Pesos),
+  SaldoCuentaCredito (En el TipoMoneda comprado),
+  ImporteCompradoEnTipoMoneda (En el TipoMoneda comprado),
+  FechaTransacion (fecha en formato DateTime)		
+}
+
+Monedo Base: Peso: 1p
+
+BitCoin: 1bc => 3000p venta, 2800p compra
+Ethereum: 1e => 1500p venta, 1300p compra
+Monero: 1m => 400p venta, 300p compra
+Cardano: 1c  => 200p venta, 150p compra
+
+RN:
+CuentaDebito: 
+	Lo que compro sciempre lo pago en pesos. 
+	Tenemos infinito pesos.

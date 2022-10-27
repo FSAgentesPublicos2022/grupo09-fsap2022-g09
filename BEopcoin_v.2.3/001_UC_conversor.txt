@@ -1,0 +1,60 @@
+Modulo: Conversion de Moneda
+
+POST:/api/conversor/convertir
+
+DTO
+(request)
+{
+  CuentaDebito (ID_Billetera, Tipo Moneda: ANY),
+  CuentaCredito (ID_Billetera, Tipo Moneda: ANY != TipoMoneda CuentaDebito),
+  Importe (TipoMoneda = TipoMoneda CuentaDebito)
+}
+
+DTO
+(response)
+{
+  SaldoCuentaDebito,
+  SaldoCuentaCredito,
+  ImporteConvertido,
+  FechaTransacion	
+}
+
+Monedo Base: Peso: 1p
+
+BitCoin: 1bc => 3000p venta, 2800p compra
+Ethereum: 1e => 1500p venta, 1300p compra
+Monero: 1m => 400p venta, 300p compra
+Cardano: 1c  => 200p venta, 150p compra
+
+RN:
+
+1) Formula de conversion de TipoMoneda_CuentaDebito a TipoMoneda_CuentaCredito
+
+Importe_TipoMoneda_CuentaCredito =
+PrecioDeCompraEnPeso_De_TipoMoneda_CuentaDebito * Importe_TipoMoneda_CuentaDebito
+/
+PrecioDeVentaEnPeso_De_TipoMoneda_CuentaCredito
+
+2) Formula de conversion de TipoMoneda_CuentaDebito a TipoMoneda_CuentaCredito con factor de conversion
+
+Factor de conversion 
+
+FactorDeConversion = PrecioDeCompraEnPeso_De_TipoMoneda_CuentaDebito / PrecioDeVentaEnPeso_De_TipoMoneda_CuentaCredito
+
+Importe_TipoMoneda_CuentaCredito = FactorDeConversion * Importe_TipoMoneda_CuentaDebito
+
+Auxiliares:
+GET:/api/TipoMoneda/Get
+
+
+
+
+
+
+
+
+
+
+
+
+

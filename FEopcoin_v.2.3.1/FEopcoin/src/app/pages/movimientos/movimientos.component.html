@@ -1,0 +1,34 @@
+<h5>Ultimos Movimientos</h5>
+<h5>{{usuarioSaldo}}</h5>
+<h5>{{hoy|date: "d/M/yy"}}</h5>
+
+<!------------------------------------------------------------------------------------------------------>
+<div class="m-3">
+    <button type="submit" class="btn btn-primary" (click)="onComprarEthereum()">Comprar $200.000 de Ethereum</button>
+</div>
+
+<div class="m-3">
+    <button type="submit" class="btn btn-primary" (click)="onGetSaldoPesos()">Ver saldo en cuenta de Pesos</button>
+</div>
+
+<div class="m-3">
+    <button type="submit" class="btn btn-primary" (click)="onGetBilleteraEthereum()">Ver billetera Ethereum</button>
+</div>
+
+<!------------------------------------------------------------------------------------------------------>
+
+<table *ngIf="mostrarMovimientos" class="table">
+    <thead>
+        <th>Operación</th>
+        <th>Monto</th>
+        <th>Moneda</th>
+        <!---->
+    </thead>
+    <tbody>
+        <tr *ngFor="let element of movimientos">
+            <td>{{element.operacion}}</td>
+            <td>{{element.monto}}</td>
+            <td>{{element.moneda}}</td>
+        </tr>
+    </tbody>
+</table>

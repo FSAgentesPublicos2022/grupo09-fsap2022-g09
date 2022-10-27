@@ -1,0 +1,31 @@
+Modulo: Venta Moneda
+
+POST:/api/transacion/vender
+
+DTO
+(request)
+{
+  CuentaDebito (ID_Billetera, Tipo Moneda: ANY != Peso),
+  CuentaCredito (ID_Billetera, TipoMoneda: Peso),
+  Importe (TipoMoneda = TipoMoneda CuentaDebito)
+}
+
+DTO
+(response)
+{
+  SaldoCuentaDebito (En el TipoMoneda vendido),
+  SaldoCuentaCredito (en Pesos),
+  ImporteVendidoEnTipoMoneda (En el TipoMoneda vendido),
+  FechaTransacion (fecha en formato DateTime)	
+}
+
+Monedo Base: Peso: 1p
+
+BitCoin: 1bc => 3000p venta, 2800p compra
+Ethereum: 1e => 1500p venta, 1300p compra
+Monero: 1m => 400p venta, 300p compra
+Cardano: 1c  => 200p venta, 150p compra
+
+RN:
+CuentaCredito: 
+	Lo que vendemos siempre lo cobramos en pesos.
